@@ -419,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AmethystWorks.Mail-Direct";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,6 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AmethystWorks.Mail-Direct";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +509,7 @@
 				0222E8721E97CAE500E25023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0222E8731E97CAE500E25023 /* Build configuration list for PBXNativeTarget "Mail-DirectTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +518,7 @@
 				0222E8751E97CAE500E25023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0222E8761E97CAE500E25023 /* Build configuration list for PBXNativeTarget "Mail-DirectUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +527,7 @@
 				0222E8781E97CAE500E25023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
