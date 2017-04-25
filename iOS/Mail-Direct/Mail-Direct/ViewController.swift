@@ -1,28 +1,48 @@
-//
-//  ViewController.swift
-//  Mail-Direct
-//
-//  Created by Randell Carrido on 4/7/17.
-//  Copyright © 2017 AmethystWorks. All rights reserved.
-//
+/*
+* Randell Carrido
+* Course: CSC 415
+* Semester: Spring 2017
+* Instructor: Dr. Pulimood
+* Project name: Mail Direct
+* Description: App that notifies user when mail is in their mailbox
+* Filename: viewController.swift
+* Description: Login view
+* Last modified on: 4/25
+*/
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate { // inherit for hitting return
+	//Login button modal segues into main view
+	@IBOutlet weak var textField1: UITextField!
+	@IBOutlet weak var textField: UITextField!
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
+		// for hitting return
+		textField.delegate = self
+		
+		// for tapping
+		self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	/*
+	/ dismissKeyboard() and 
+	/ textFieldShouldReturn(textField: UITextField)
+	/
+	/ Work together to allow tap gesture to dismiss keyboard
+	*/
+	
+	// for tapping
+	func dismissKeyboard() {
+		textField.resignFirstResponder()
+		textField1.resignFirstResponder()
 	}
-
-	@IBOutlet weak var userName: UITextField!
-	@IBOutlet weak var userPass: UITextField!
-	@IBOutlet weak var logInButton: UIButton!
-	@IBOutlet weak var signUp: UIButton!
+	
+	// for hitting return
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+		textField1.resignFirstResponder()
+		return true
+	}
 }
 

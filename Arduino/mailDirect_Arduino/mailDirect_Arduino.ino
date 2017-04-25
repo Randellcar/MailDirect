@@ -1,5 +1,15 @@
 
-
+/*
+ * Randell Carrido
+ * Course: CSC 415
+ * Semester: Spring 2017
+ * Instructor: Dr. Pulimood
+ * Project name: Mail Direct
+ * Description: App that notifies user when mail is in their mailbox
+ * Filename: mailDirect_Arduino.ino
+ * Description: Arduino sensor portion, programs the sensors
+ * Last modified on: 4/25
+ */
 const int trigPin = 9;
 const int echoPin = 10;
 
@@ -11,7 +21,13 @@ void setup() {
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
 }
-
+/*
+ * Code above: setup(), Initial setup for arduion, sets pins.
+ * 
+ * Code below: loop(), Runs in a loop, runs the sensor, writes in
+ * distances. If distance = 11, there is no mail. Else, there is 
+ * mail.
+ */
 void loop() {
   digitalWrite(trigPin,LOW);
   delayMicroseconds(2);

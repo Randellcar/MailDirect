@@ -14,6 +14,8 @@
 		0222E8561E97CAE400E25023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0222E8541E97CAE400E25023 /* LaunchScreen.storyboard */; };
 		0222E8611E97CAE500E25023 /* Mail_DirectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222E8601E97CAE400E25023 /* Mail_DirectTests.swift */; };
 		0222E86C1E97CAE500E25023 /* Mail_DirectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222E86B1E97CAE500E25023 /* Mail_DirectUITests.swift */; };
+		02984E491EAF127C00D4956A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02984E481EAF127C00D4956A /* MainView.swift */; };
+		02984E4B1EAF2CB000D4956A /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02984E4A1EAF2CB000D4956A /* file.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0222E8671E97CAE500E25023 /* Mail-DirectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mail-DirectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0222E86B1E97CAE500E25023 /* Mail_DirectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail_DirectUITests.swift; sourceTree = "<group>"; };
 		0222E86D1E97CAE500E25023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02984E481EAF127C00D4956A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		02984E4A1EAF2CB000D4956A /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				0222E84B1E97CAE400E25023 /* AppDelegate.swift */,
+				02984E481EAF127C00D4956A /* MainView.swift */,
 				0222E84D1E97CAE400E25023 /* ViewController.swift */,
 				0222E84F1E97CAE400E25023 /* Main.storyboard */,
 				0222E8521E97CAE400E25023 /* Assets.xcassets */,
 				0222E8541E97CAE400E25023 /* LaunchScreen.storyboard */,
 				0222E8571E97CAE400E25023 /* Info.plist */,
+				02984E4A1EAF2CB000D4956A /* file.txt */,
 			);
 			path = "Mail-Direct";
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			files = (
 				0222E8561E97CAE400E25023 /* LaunchScreen.storyboard in Resources */,
 				0222E8531E97CAE400E25023 /* Assets.xcassets in Resources */,
+				02984E4B1EAF2CB000D4956A /* file.txt in Resources */,
 				0222E8511E97CAE400E25023 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0222E84E1E97CAE400E25023 /* ViewController.swift in Sources */,
+				02984E491EAF127C00D4956A /* MainView.swift in Sources */,
 				0222E84C1E97CAE400E25023 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
