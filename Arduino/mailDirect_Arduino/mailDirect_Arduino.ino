@@ -10,15 +10,17 @@
  * Description: Arduino sensor portion, programs the sensors
  * Last modified on: 4/25
  */
+
 const int trigPin = 9;
 const int echoPin = 10;
-
+const int LED = 11;
 long duration;
 int distance;
 
 void setup() {
   pinMode(trigPin,OUTPUT);
-  pinMode(echoPin, INPUT);
+  pinMode(echoPin,INPUT);
+  pinMode(LED,OUTPUT);
   Serial.begin(9600);
 }
 /*
@@ -41,12 +43,13 @@ void loop() {
 
   
 
-  if(distance != 11){
-    Serial.println("You've got mail!");
+  if(distance <9){
+    Serial.println("You've got Mail!");
+    digitalWrite(LED,HIGH);
   }
   else{
     Serial.println("No Mail.");
+    digitalWrite(LED,LOW);
   }
-  
-
+  delay(500);
 }
