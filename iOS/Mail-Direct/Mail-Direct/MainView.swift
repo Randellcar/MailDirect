@@ -18,7 +18,7 @@ class MainView: UIViewController {
 	
 	
 	@IBOutlet weak var circleImg: UIImageView!
-	
+	@IBOutlet weak var mailText: UILabel!
 	var readStringProject = "" // Used to store the file contents
 	/*
 	/ viewDidLoad()
@@ -29,20 +29,6 @@ class MainView: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		let fileURLProject = Bundle.main.path(forResource: "file", ofType: "txt")
-		// Read from the file
-		do {
-			readStringProject = try String(contentsOfFile: fileURLProject!, encoding: String.Encoding.utf8)
-			print(readStringProject)
-		} catch let error as NSError {
-			print("Failed reading from URL")
-		}
-		if(readStringProject.isEmpty){
-			circleImg.image = UIImage(named:"blue")
-		}
-		else{
-			circleImg.image = UIImage(named:"red")
-		}
 		
 	}
 	/*
@@ -61,25 +47,27 @@ class MainView: UIViewController {
 		do {
 			readStringProject = try String(contentsOfFile: fileURLProject!, encoding: String.Encoding.utf8)
 			print(readStringProject)
-		} catch let error as NSError {
+		} catch let _ as NSError {
 			print("Failed reading from URL")
 		}
-
+		
 		if(readStringProject.isEmpty){
 			circleImg.image = UIImage(named:"blue")
+			self.mailText.text = "You've got Mail!"
 		}
 		else{
 			circleImg.image = UIImage(named:"red")
+			self.mailText.text = "No Mail :("
 		}
 	}
 	
 	// Gear button on upper right brings user to Profile
 	// settings
-
+	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
-
+	
 	
 	
 	

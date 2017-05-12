@@ -11,7 +11,6 @@
 */
 
 import UIKit
-
 class ViewController: UIViewController, UITextFieldDelegate { // inherit for hitting return
 	//Login button modal segues into main view
 	@IBOutlet weak var textField1: UITextField!
@@ -23,10 +22,20 @@ class ViewController: UIViewController, UITextFieldDelegate { // inherit for hit
 		textField.delegate = self
 		
 		// for tapping
-		self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
+		self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard)))
 	}
+	@IBAction func prepareForUnwind(segue:UIStoryboardSegue) {
+		
+	}
+	
+	@IBAction func ITHelpDesk(_ sender: UIButton) {
+		UIApplication.shared.open(URL(string: "https://tcnj.teamdynamix.com/TDClient/Home/")!, options: [:], completionHandler: nil)
+	}
+	
+	
+	
 	/*
-	/ dismissKeyboard() and 
+	/ dismissKeyboard() and
 	/ textFieldShouldReturn(textField: UITextField)
 	/
 	/ Work together to allow tap gesture to dismiss keyboard
@@ -39,7 +48,7 @@ class ViewController: UIViewController, UITextFieldDelegate { // inherit for hit
 	}
 	
 	// for hitting return
-	func textFieldShouldReturn(textField: UITextField) -> Bool {
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		textField.resignFirstResponder()
 		textField1.resignFirstResponder()
 		return true

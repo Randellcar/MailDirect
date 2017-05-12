@@ -14,6 +14,9 @@
 		0222E8561E97CAE400E25023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0222E8541E97CAE400E25023 /* LaunchScreen.storyboard */; };
 		0222E8611E97CAE500E25023 /* Mail_DirectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222E8601E97CAE400E25023 /* Mail_DirectTests.swift */; };
 		0222E86C1E97CAE500E25023 /* Mail_DirectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222E86B1E97CAE500E25023 /* Mail_DirectUITests.swift */; };
+		023881A01EC3F2E800B6243F /* ScaleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238819F1EC3F2E800B6243F /* ScaleSegue.swift */; };
+		023881AC1EC5278D00B6243F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023881AB1EC5278D00B6243F /* Settings.swift */; };
+		023881B11EC5307300B6243F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023881B01EC5307300B6243F /* ProfileViewController.swift */; };
 		02984E491EAF127C00D4956A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02984E481EAF127C00D4956A /* MainView.swift */; };
 		02984E4B1EAF2CB000D4956A /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02984E4A1EAF2CB000D4956A /* file.txt */; };
 /* End PBXBuildFile section */
@@ -49,6 +52,9 @@
 		0222E8671E97CAE500E25023 /* Mail-DirectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mail-DirectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0222E86B1E97CAE500E25023 /* Mail_DirectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail_DirectUITests.swift; sourceTree = "<group>"; };
 		0222E86D1E97CAE500E25023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0238819F1EC3F2E800B6243F /* ScaleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSegue.swift; sourceTree = "<group>"; };
+		023881AB1EC5278D00B6243F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		023881B01EC5307300B6243F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		02984E481EAF127C00D4956A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		02984E4A1EAF2CB000D4956A /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +109,9 @@
 			children = (
 				0222E84B1E97CAE400E25023 /* AppDelegate.swift */,
 				02984E481EAF127C00D4956A /* MainView.swift */,
+				023881B01EC5307300B6243F /* ProfileViewController.swift */,
+				0238819F1EC3F2E800B6243F /* ScaleSegue.swift */,
+				023881AB1EC5278D00B6243F /* Settings.swift */,
 				0222E84D1E97CAE400E25023 /* ViewController.swift */,
 				0222E84F1E97CAE400E25023 /* Main.storyboard */,
 				0222E8521E97CAE400E25023 /* Assets.xcassets */,
@@ -266,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023881B11EC5307300B6243F /* ProfileViewController.swift in Sources */,
+				023881A01EC3F2E800B6243F /* ScaleSegue.swift in Sources */,
 				0222E84E1E97CAE400E25023 /* ViewController.swift in Sources */,
 				02984E491EAF127C00D4956A /* MainView.swift in Sources */,
 				0222E84C1E97CAE400E25023 /* AppDelegate.swift in Sources */,
+				023881AC1EC5278D00B6243F /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
