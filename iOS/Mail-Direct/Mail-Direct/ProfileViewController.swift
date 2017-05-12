@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController {
 	@IBOutlet weak var eMail: UILabel!
 	@IBOutlet weak var phoneNumber: UILabel!
 	@IBOutlet weak var resBox: UILabel!
-	
+	//Above are the variables for the different changeable profile info
 	override func viewDidLoad() {
         super.viewDidLoad()
 

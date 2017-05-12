@@ -15,6 +15,11 @@ class ViewController: UIViewController, UITextFieldDelegate { // inherit for hit
 	//Login button modal segues into main view
 	@IBOutlet weak var textField1: UITextField!
 	@IBOutlet weak var textField: UITextField!
+	/*
+	Login Page where the user can input their TCNJ username and password. Lower link allows for the user to go to IT Help
+	website which is opened in Safari
+	*/
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		

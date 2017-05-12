@@ -29,7 +29,11 @@ class Settings: UIViewController {
 		
 		// Do any additional setup after loading the view.
 	}
+	/*
+	Settings menu allows user to check profile, logout, and toggle notifications (push, text, email). The above code puts borders
+	on each UILabel for design purposes. There is a back button that unwind segways back to the mail check view.
 	
+	*/
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.

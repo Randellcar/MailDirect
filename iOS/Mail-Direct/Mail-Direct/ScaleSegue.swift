@@ -14,7 +14,9 @@ class ScaleSegue: UIStoryboardSegue {
 	override func perform() {
 		scale()
 	}
-	
+	/*
+	ScaleSegue is a class that changes the segway animation from swipe up to circle. Unwind is the reverse of the animation.
+	*/
 	func scale () {
 		let toViewController = self.destination
 		let fromViewController = self.source
